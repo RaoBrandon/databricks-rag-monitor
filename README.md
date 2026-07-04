@@ -1,1 +1,3 @@
-# databricks-rag-monitor
+# Databricks RAG Monitor
+
+A production-style Retrieval Augmented Generation application built entirely on the Databricks platform. The application ingests Databricks documentation into a medallion architecture on Delta Lake, chunks and embeds the content into a Mosaic AI Vector Search index, and serves user queries through an LLM pipeline that retrieves relevant context before generating responses. Built on top of the RAG layer is a monitoring and evaluation framework using MLflow tracing and inference logging to track response quality, retrieval precision, and model performance over time. The project demonstrates the full lifecycle of a GenAI application from raw data ingestion through to production monitoring, reflecting the end to end architecture that enterprise data teams need when deploying LLM applications at scale.
